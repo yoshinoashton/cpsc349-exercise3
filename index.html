@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="calc">
+      <div class="output">
+        <p id="display-box"></p>
+      </div>
+      <div class="row-1">
+        <button class="number" onclick="userInput('7')">7</button>
+        <button class="number" onclick="userInput('8')">8</button>
+        <button class="number" onclick="userInput('9')">9</button>
+        <button class="operator" onclick="userInput('+')">+</button>
+      </div>
+      <div class="row-2">
+        <button class="number" onclick="userInput('4')">4</button>
+        <button class="number" onclick="userInput('5')">5</button>
+        <button class="number" onclick="userInput('6')">6</button>
+        <button class="operator" onclick="userInput('-')">-</button>
+      </div>
+      <div class="row-3">
+        <button class="number" onclick="userInput('1')">1</button>
+        <button class="number" onclick="userInput('2')">2</button>
+        <button class="number" onclick="userInput('3')">3</button>
+        <button class="operator" onclick="userInput('*')">x</button>
+      </div>
+      <div class="row-4">
+        <button class="clear" onclick="clearContents()">C</button>
+        <button class="number" onclick="userInput('0')">0</button>
+        <button class="submit" onclick="calculate()">=</button>
+        <button class="operator" onclick="userInput('/')">/</button>
+      </div>
+    </div>
+  </body>
+
+
+
+
+</html>
