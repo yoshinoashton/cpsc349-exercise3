@@ -14,5 +14,8 @@ function clearContents() {
 }
 
 function calculate() {
-  document.getElementById("display-box").innerHTML = eval(document.getElementById("display-box").innerHTML);
+  contents = document.getElementById("display-box").innerHTML;
+  if (contents !== "") {
+    document.getElementById("display-box").innerHTML = eval(document.getElementById("display-box").innerHTML);
+  }
 }
